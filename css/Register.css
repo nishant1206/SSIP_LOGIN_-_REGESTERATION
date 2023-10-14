@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    user-select: none;
+}
+
+#main_container{
+    margin: auto;
+    margin-top: 100px;
+}
+
+.container_box{
+    margin: auto;
+    width: 60%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px -4px black;
+}
+
+#details{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#Image_Container{
+    background-image: url(../Images/ashok-stambha.png);
+}
+
+#Anganwari_side_text_container{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+#Anganwari_side_text_container h1{
+    font-size: 70px;
+    font-weight: 100;
+    font-style: oblique;
+    font-family: system-ui;
+}
+
+@keyframes side_animation {
+    /* 0%[#Anganwari_side_text_container h1]{ */
+
+    /* } */
+}
+
+.details_input{
+    display: block;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin-top: 20px; */
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid palevioletred;
+    /* border-image: ; */
+    width: -webkit-fill-available;
+    font-weight: bolder;
+    user-select: none;
+}
+
+.details_input:focus{
+    transition: 0.5s ease-in;
+    /* outline-style: ridge; */
+}
+
+#input_container{
+    width: 50%;
+    overflow: hidden;
+    margin: auto;
+    border: 2px solid palevioletred;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+#Next_btn{
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: palevioletred;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    background: linear-gradient(121.19deg,rgba(133,239,49,0) 25.73%,hsla(0,0%,100%,.3) 45.27%,rgba(133,239,49,0) 62.27%), palevioletred;
+    animation: Button_animation 30s linear infinite;
+    cursor: pointer;
+}
+
+#Next_btn:hover{
+
+    animation-duration: 25s;
+}
+
+@keyframes Button_animation{
+    0%{
+        background-position: -5000px 0px;
+    }
+    100%{
+        background-position: 5000px 0px;
+    }
+};
+
+
+.paragraph_label{
+    font-weight: bolder;
+}
+
+@media screen and (max-width:1234px) {
+    #Anganwari_side_text_container{
+        display: none;
+    }
+    #input_container{
+        width: 100%;
+    }
+    .container_box{
+        width: 75%;
+    }
+    #input_container div p{
+        text-align: center;
+    }
+}
